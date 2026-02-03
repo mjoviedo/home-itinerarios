@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio de Proyectos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Itinerarios en el tiempo</h1>
+        <img id="nubes" src="img/nubees.png" alt="">
+    </header>
+    <main id="project-list" class="project-list">
+        <!-- Los proyectos se inyectarán aquí a través de JavaScript -->
+    </main>
+    <footer id="footer">
+        <p>Itinerarios en el tiempo</p>
+        <p>ISEP</p>
+    </footer>
+
+    <!-- Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 id="modal-title"></h2>
+            <img id="modal-image" src="" alt="" />
+            <span id="modal-category"></span>
+            <p id="modal-description"></p>
+            <a id="modal-link" href="#" target="_blank">Visitar Proyecto</a>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
