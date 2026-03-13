@@ -61,6 +61,7 @@ header {
     position: relative;
     width: 100vw;
     max-width: 100vw;
+
 } 
 
 header div {
@@ -71,6 +72,10 @@ header div {
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+header div:first-child {
+    margin-top: 60px;
 }
 
 #acercade {
