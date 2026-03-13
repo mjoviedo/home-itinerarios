@@ -1,9 +1,14 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
 :root {
-    --negro: #0B0B0B;
-    --gris: #202020;
-    --accent: white;
-    --color1: #784453;
-    --color2: rgb(202, 126, 64);
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -24,11 +29,13 @@ body {
     padding: 0;
     background-color: var(--negro);
     overflow-x: hidden;
+    font-family: "Open Sans", sans-serif;
+
 }
 
 main {
     color: #fff;
-    height: 60vh;
+    height: fit-content;
     background-image: linear-gradient( #020101, #020101c7, #461d29a4, #27130856, #2713081a), url(img/bg-proyectos.jpg); 
     background-position: bottom;
     background-size: cover;
@@ -40,13 +47,14 @@ main {
     padding: 40px 0 40px 0;
     width: 100vw;
     max-width: 100vw;
+    overflow-x: hidden;
 }
 
 header {
     color: #fff;
-    padding: 10px 20px;
     text-align: center;
-    height: 75vh;
+    height: 100vh;
+    min-height: fit-content;
     max-width: 100vw;
     background-image: linear-gradient(#2713081a, #2713081a, #461d29a4, #020101c7, #020101), url(img/bg-sierras2.jpg); 
     background-position: bottom;
@@ -61,7 +69,7 @@ header {
     position: relative;
     width: 100vw;
     max-width: 100vw;
-
+    margin-bottom: -1px;
 } 
 
 header div {
@@ -76,6 +84,9 @@ header div {
 
 header div:first-child {
     margin-top: 60px;
+}
+header div:last-child {
+    margin-top: 30px;
 }
 
 #acercade {
@@ -102,13 +113,13 @@ header div:first-child {
 }
 
 #acercade div h1 a {
-    color: var(--color1);
+    color: var(--color6);
     text-decoration: none;
 }
 
 
 .boton {
-    background-color: var(--color1);
+    background-color: var(--color6);
     color: white;
     text-decoration: none;
     padding: 1em 3em;
@@ -118,14 +129,14 @@ header div:first-child {
 }
 
 .boton:hover {
-    background-color: var(--color2);
+    background-color: var(--color7);
 }
 
 .boton2 {
     border: 2px solid;
-    border-color: var(--color2);
+    border-color: var(--color7);
     font-family: "Open Sans";
-    color: var(--color2);
+    color: var(--color7);
     font-size: large;
     text-decoration: none;
     padding: 0.5em 2em;
@@ -162,7 +173,6 @@ header div:first-child {
     animation-duration: 30s;
     animation-iteration-count: infinite;
     z-index: 1;
-    overflow: hidden;
 }
 
 
@@ -172,6 +182,7 @@ header div:first-child {
     max-width: 1100px;
     text-align: center;
     padding: 20px;
+    border-color: black;
 }
 
 .project-list {
@@ -199,7 +210,7 @@ header div:first-child {
 .project-card:hover {
     transform: translateY(-5px);
     transition: 0.3s;
-    border: 2px solid var(--color1);
+    border: 2px solid var(--color6);
 }
 
 .project-card img {
@@ -219,10 +230,10 @@ header div:first-child {
 .project-card .category {
     width: fit-content;
     font-size: 0.8em;
-    border: 1px solid var(--color2);
+    border: 1px solid var(--color7);
     border-radius: 5px;
     padding: 5px;
-    color: var(--color2);
+    color: var(--color7);
 }
 
 .project-card a {
@@ -276,7 +287,7 @@ header div:first-child {
 
 .close-button:hover,
 .close-button:focus {
-    color: var(--color2);
+    color: var(--color7);
     text-decoration: none;
     cursor: pointer;
 }
@@ -295,14 +306,14 @@ header div:first-child {
     text-align: center;
     margin-top: 10px;
     padding: 10px;
-    background: var(--color1);
+    background: var(--color6);
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
 }
 
 #modal-link:hover {
-    background: var(--color2);
+    background: var(--color7);
 }
 
 footer {
