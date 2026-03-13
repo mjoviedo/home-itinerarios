@@ -66,6 +66,7 @@ section {
     padding: 0.5em 2em;
     text-align: center;
     transition: 0.5s;
+    background-color: var(--color6);
 }
 
 .boton:hover {
@@ -958,3 +959,7 @@ img.zoomed {
     .maincontainer a:hover {
         color: var(--color3);
     }
+
+.texto-intro {
+    font-family: "bitter";
+}
