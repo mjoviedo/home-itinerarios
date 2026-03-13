@@ -1,0 +1,80 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garzon Agulla</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@5/dist/aframe-event-set-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-layout-component@5.3.0/dist/aframe-layout-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-template-component@3.2.1/dist/aframe-template-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-proxy-event-component@2.1.0/dist/aframe-proxy-event-component.min.js"></script>
+    <link rel="stylesheet" href="../fonts.css">
+    <link rel="stylesheet" href="../colores.css">
+    <link rel="stylesheet" href="estilos360.css">
+    <link rel="stylesheet" href="../animations.css">
+</head>
+<body>
+  <a-scene>
+    <a-assets>
+      <img id="panorama" src="360-hall-ingreso-marron.jpg" crossorigin />
+    </a-assets>
+    <a-sky src="#panorama" rotation="0 -90 0"></a-sky>
+  </a-scene>
+
+  <button id="open" onclick="toggleMediabox()">
+        <img src="../img/icon-pdf.png" alt="">
+  </button>
+  
+  <!-- <div id="tressesenta">
+    <img src="../img/360-degree-rotate-icon.png" alt="">
+  </div>
+-->
+  <div id="media-box" style="scale: 1;">
+    
+    <div class="mediabox-content">
+          <!--<img id="estampilla3" class="estampilla-zoom" src="../img/estampilla-laica.png" alt=""> -->
+          
+      <p>
+        Cada espacio del Garzón Agulla
+        <br>
+        guarda algo nuevo a descubrir
+        <br>
+        sobre el <strong>Escolanovismo</strong> 
+      </p>
+      <img id="icono360" src="../img/360-degree-rotate-icon.png" alt="">
+      <p style="color: var(--color1); font-size: larger;">
+        <em>
+          Explora sus espacios a 360°
+        </em>
+      </p>
+      
+      <button id="close" onclick="toggleMediabox()">
+        ✖
+      </button>
+    </div>
+
+    <nav id="nav360">
+      <a href="pileta.html">Pileta</a>
+      <a href="salon.html">Salón de actos</a>
+      <a href="biblioteca.html">Biblioteca</a>
+      <a href="patio.html">Patio</a>
+    </nav>
+  
+  </div>
+
+<script src="js/scripts.js"></script>
+<script>
+document.querySelectorAll('.estampilla-zoom').forEach(i => {
+  i.addEventListener('click', evt => {
+    if (i.classList.contains('zoomed'))
+      i.style.transform = ''
+    else {
+      const myScale = 300 / i.clientWidth
+      i.style.transform = `scale(${myScale})`
+    }
+    i.classList.toggle('zoomed')
+  })
+})
+</script>
+</body>
+</html> 

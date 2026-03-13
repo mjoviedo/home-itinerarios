@@ -1,0 +1,266 @@
+<html lang="es">
+<head>
+    <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-QFQW18G412"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-QFQW18G412'); </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itinerarios en el tiempo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-nav.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="colores.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+
+</head>
+<body>
+    <nav id="navbar">
+        <div>
+            <h1><a id="isep" href="https://isep-cba.edu.ar/web/">ISEP</a></h1>
+        </div>
+        <div id="nav-list" class="nav-list">
+
+        </div>
+    </nav>
+
+    <section class="intro-r1 columnas">
+
+        <img src="img/logo-region1.png" class="iconoregion fadein ad1" alt="">
+        <h1 class="tituloregion sombra fadein ad2">Institucionalización y expansión</h1>
+        <a href="#bajada-r1"><img class="fadein ad2" src="img/flecha-abajo.png" alt=""></a>
+
+    </section>
+
+    <section id="bajada-r1" class="intro-r1 columnas">
+        <div class="texto-intro">
+            <p>
+                El itinerario <strong>Institucionalización y expansión</strong> propone un recorrido que va desde fines del siglo XIX hasta mediados del siglo XX . Inicia un ciclo de génesis e institucionalización del sistema formador a nivel nacional haciendo foco en el escenario cordobés y la creación de las escuelas normales en el territorio provincial. El normalismo constituye una marca de la época: para ejercer el oficio docente, se requiere un título obtenido en la escuela normal. El recorrido continúa presentando los debates que atravesó la formación docente durante las primeras décadas del siglo XX: las influencias del espiritualismo y el escolanovismo en Argentina imprimieron modernizaciones en un momento en que la formación docente atravesaba un ciclo en expansión. La experiencia de la Escuela Normal Superior en la Córdoba de los años '40 es una expresión paradigmática de los debates de la formación docente de la época.
+            </p>
+        </div>
+         <a href="#video"><img class="fadein ad2" src="img/flecha-abajo.png" alt=""></a>
+    </section>
+
+    <section class="media-section filas" id="video">
+        <div class="encabezado-degradado">
+            <h2>Los orígenes</h2>
+            <p>
+                Debates, actores y sentidos en el  proceso de fundación de las escuelas normales en Córdoba.
+            </p>
+        </div>
+        <div class="contenedor-media">
+            <video controls preload="none" poster="img/thumb-carbo.jpg" class="audioscroll">
+                    <source src="multimedia/normalismo-documental.mp4">
+            </video>
+        </div>
+        <div class="pie-de-seccion">
+            <div class="pie-material">
+                    <img src="img/icon-video.png" alt="">
+                <div class="leyenda">
+                    <p><strong>Fragmento del documental</strong><br><em>Las Escuelas Normales en la génesis del sistema formador en Córdoba</em></p>
+                </div>
+            </div>
+            <div>
+                <a href="https://youtu.be/RCcQ0N93DwM" class="boton blanco">Miralo completo</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="mapa-escuelasnormales" class="media-section" class="filas">
+    
+        <div class="encabezado">
+            <h2>El club de las 8</h2>
+            <p>
+                Las escuelas normales a la conquista del territorio
+            </p>
+        </div>
+
+        <div id="contenedor-mapa" class="contenedor-media">
+            <div id="map"></div>
+            <img id="estampilla4" class="estampilla-zoom" src="img/estampilla-constr-comun.png" alt="">
+        </div>
+        
+    </section>
+
+    <section id="frases-cuadernillos" class="media-section" class="filas">
+        <div class="encabezado">
+            <h2>Ampliando el panorama</h2>
+            <p>Contexto político educativo nacional y debates sobre la formación de maestros a fines del siglo XIX</p>
+        </div>
+        <div id="media-cuadernillo" class="contenedor-media">
+            <div>
+                <img loading="lazy" src="img/infografia.png" alt="">
+            </div>
+            <div class="textos-cuadernillo">
+                <p class="fadein ad1">
+                    Con un discurso de modernización cosmopolita, el normalismo procesó –muchas veces mediante la negación, la censura y la persecución- las diferencias de origen de sus alumnos y docentes, y buscó imponer un imaginario común de cuño ilustrado, con fuertes elementos positivistas, republicanos y burgueses. 
+                </p><p class="fadein ad2">
+                    Los normalistas amaban la cultura escrita y tenían al higienismo, al decoro y al “buen gusto” como sus símbolos culturales más distinguidos, a los que oponían tanto el lujo y el derroche aristocrático como la ignorancia, la sensualidad y la “brusquedad” de los sectores populares. 
+                </p><p class="fadein ad3">
+                    Quizá uno de los mejores símbolos de esta situación sea el guardapolvo blanco que los escolares y maestros argentinos utilizan desde las primeras décadas del siglo XX, símbolo que también puede leerse como cierta búsqueda de una identidad común, bandera de lucha de los docentes y estudiantes en defensa de la educación pública, entre otros aspectos.
+                </p>
+            </div>
+        </div>
+        <div class="pie-de-seccion">
+                <div class="pie-material blanco">
+                    <img src="img/icon-pdf.png" alt="">
+                    <div class="leyenda">
+                        <p><strong>Fragmentos del cuaderno</strong><br><em>Estudios pedagógicos sobre el oficio de enseñar</em></p>
+                        <br>
+                    </div>
+                </div>
+                <a href="multimedia/it-cuaderno1.pdf" class="boton blanco">Descargalo en PDF</a>
+        </div>
+    </section>
+
+    <section id="podcast" class="media-section" class="columnas">
+        <img id="estampilla1" class="estampilla-zoom" src="img/estampilla-inspiradores.png" alt="">
+        <div class="encabezado">
+            <h2>
+                Bienvenida Miss Jennie
+            </h2>
+            <p>
+                El clima de época en una escuela normal pardigmàtica: la historia de Jennie Howard en el Carbó.
+            </p>
+        </div>
+        <div id="media-podcast" class="contenedor-media">
+            
+            <div class="columna-podcast">
+                <h1 class="sombra">Jennie Howard, una maestra ejemplar</h1>
+                <audio controls class="audioscroll" src="multimedia/normalismo-podcast.mp3"></audio>
+                <br>
+            </div>
+        </div>  
+        <div class="pie-de-seccion">
+                <div class="pie-material blanco">
+                    <img src="img/icon-audio.png" alt="">
+                    <div class="leyenda">
+                        <p><strong>Fragmento del podcast</strong><br><em>La Casa del Diablo</em></p>
+                        <br>
+                    </div>
+                </div>
+                <a href="https://youtu.be/Bb-DF7Z-XUw" class="boton blanco">Escuchar el podcast completo</a>
+        </div>
+    </section>
+
+    <section id="fotos" class="media-section">
+        <img id="estampilla2" class="estampilla-zoom" src="img/estampilla-inspiradores.png" alt="">
+        <div class="encabezado">
+            <h2>Revelando huellas</h2>
+            <p>
+                Las marcas de la matriz fundacional normalista en la arquitectura del Carbó.
+            </p>
+        </div>
+        <div id="media-fotos" class="contenedor-media">
+            <div class="container">
+                <div class="foto-container">
+                    <div class="diapotexto" style="background-color: #00000088; border-radius: 1em;">
+                        <p class="sombra">
+                        Las huellas del normalismo persisten en la arquitectura de la escuela Carbó, ubicada en el centro de Córdoba. Los protagonistas actuales recorren la institución día a día, muchas veces desconociendo las ideas que guiaron la construcción de los salones y pasillos, escaleras, patios y ventanas.
+                        </p>
+                    </div>
+                    <img loading="lazy" src="img/foto1.jpg" alt="">
+                    <img loading="lazy" src="img/foto2.jpg" alt="">
+                    <img loading="lazy" src="img/foto3.jpg" alt="">
+                    <img loading="lazy" src="img/foto4.jpg" alt="">
+                    <img loading="lazy" src="img/foto5.jpg" alt="">
+                    <div class="diapotexto">
+                        <p>
+                           <em>"Pero esa composición que la fotografía nos muestra puede señalar otras cosas. Más que la disputa entre dos modelos definidos con claridad que asumen valoraciones absolutas (normalismo laico y titulación, que acredita una formación adecuada y moderna, versus educación religiosa amateur, que aseguraba la transmisión de los valores tradicionales de la comunidad), el reflejo de la iglesia en la ventana del colegio puede indicar la presencia del afuera en el adentro; un resto religioso en el proyecto educativo y nacionalizador encarado por el Estado."</em></p>
+                           <p><em>Producción de presencia</em> por Diego García</p>
+                           <a class="link" href="https://isep-cba.github.io/itinerarios-carbo/ensayo2.html">Continuar leyendo</a>     
+                    </div>
+                    <div class="espaciador"></div>
+                    <div class="diapotexto">
+                        <div class="pie-material">
+                            <img src="img/icon-foto.png" alt="">
+                            <div class="leyenda sombra">
+                                <p><strong>Fragmento del álbum</strong><br><em>Fotografias de escuelas, el arte de la observación</em></p>
+                                <div style="padding-left: 1em;">
+                                    <a href="https://isep-cba.github.io/itinerarios-carbo/" class="boton blanco">Miralo completo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+
+    <section id="360" class="media-section" class="filas">
+        <div class="encabezado">
+            <h2>Con impronta propia</h2>
+            <p>El Escolanovismo: un Normalismo a la cordobesa.</p>
+        </div>
+        <div class="contenedor-media">
+                    <iframe loading="lazy" name="myiFrame" src="360/index.html" width="100%" height="100%" scrolling="no" marginwidth="0" marginheight="0" style="border:0px none #ffffff;"></iframe>
+        </div>
+    </section>
+
+    <section class="columnas fondo-papel ">
+        <p class="fadein ad2 marron" style="line-height: 2.1em; max-width: 600px; text-align: center;">
+            Este recorrido llega a su fin, pero como todo lo vivo, este paisaje no se detiene. 
+        <br>
+            Sigue creciendo, con cada gesto, cada palabra, cada encuentro.
+        <br>
+            Vos también sos parte de esta historia en marcha.
+        </p>
+    </section>
+
+    <section id="cierre">
+        <div class="espaciador"></div>
+        <div class="container-final">
+            <div class="texto-final">
+                <p>
+                    Después de haberlo recorrido...
+                </p>
+                <p style="color: white; font-size: larger; font-weight: 600;"> 
+                    <em>
+                    ¿qué rincones de este paisaje resuenan en tu historia personal?
+                    </em>
+                </p>
+                <p>
+                    Elegí la estampilla que mejor representa tu motivación docente y compartila.
+                </p>
+                <a class="boton blanco" href="multimedia\estampillas-isep.rar">Descargar estampillas</a>
+                
+            </div>
+            <div class="contenedor-estampillas"> 
+                <img class="estampilla-zoom" src="img/estampilla-constr-comun.png" alt="">
+                <img class="estampilla-zoom" src="img/estampilla-igualdad.png" alt="">
+                <img class="estampilla-zoom" src="img/estampilla-laica.png" alt="">
+                <img class="estampilla-zoom" src="img/estampilla-constr-ciudadania.png" alt="">
+                <img class="estampilla-zoom" src="img/estampilla-inspiradores.png" alt="">
+                <img class="estampilla-zoom" src="img/estampilla-hoizontes.png" alt="">
+                <img class="estampilla-zoom" src="img/estampilla-protagonistas.png" alt="">
+                <img class="estampilla-zoom" src="img/estampilla-pasion.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="logos">
+        <div class="filas" style="gap: 1em; margin-bottom: 2em;">
+            <a class="boton blanco" href="materiales.html">Ver todos los materiales</a>
+            <a class="boton blanco" href="index.html">Volver al inicio</a>
+        </div>
+        
+        <div class="pie-logos blanco">
+                    <img src="img/1-itinerarios-logo.png" alt="">
+                    <img src="img/2-isep-logo.png" alt="">
+                    <img src="img/3-secr-innov-des-logo.png" alt="">
+                    <img src="img/4-min-educ-logo.png" alt="">
+                    <img src="img/5-gob-gestion-logo.png" alt="">
+        </div>
+    </section>
+    <script src="logos.js"></script>
+    <script src="nav.js"></script>
+    <script src="scripts.js"></script>
+    <script src="map.js"></script>
+</body>
+</html>

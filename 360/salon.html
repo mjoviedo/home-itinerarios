@@ -1,0 +1,56 @@
+<html lang="es">
+  <head>
+    <link rel="stylesheet" href="estilos.css">
+    <meta charset="utf-8">
+    <title>Galeria Imagen</title>
+    <meta name="description" content="Galeria 360">
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@5/dist/aframe-event-set-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-layout-component@5.3.0/dist/aframe-layout-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-template-component@3.2.1/dist/aframe-template-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-proxy-event-component@2.1.0/dist/aframe-proxy-event-component.min.js"></script>
+    <link rel="stylesheet" href="../fonts.css">
+    <link rel="stylesheet" href="../colores.css">
+    <link rel="stylesheet" href="../animations.css">
+    <link rel="stylesheet" href="estilos360.css">
+</head>
+<body>
+    <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+<a-scene>
+  <a-assets>
+    <img id="panorama" src="360-auditorio.jpg" crossorigin />
+  </a-assets>
+  <a-sky src="#panorama" rotation="0 -90 0"></a-sky>
+</a-scene>
+
+<button id="open" onclick="toggleMediabox()">
+        <img src="../img/icon-audio.png" alt="">
+  </button>
+
+  <div id="media-box" style="scale: 0;">
+    <div class="mediabox-content">
+      <p>
+      Entra en un viaje sonoro al pasado: es el año 1946 y el Agulla se prepara para presentar una obra en el Teatro Real. En un recorrido sonoro visitá los distintos espacios de la escuela.
+    </p>
+    <audio controls src="../multimedia/escolanovismo-podcast.mp3"></audio>
+    <div class="enlace-mediabox">
+        <img src="../img/icon-audio.png" alt="">
+        <a class="boton beige" target="_blank" href="https://youtu.be/b5yXyXYRH-Y">Escuchá el podcast completo</a>
+      </div>
+      <button id="close" onclick="toggleMediabox()">
+        ✖
+      </button>
+    </div>
+
+    <nav id="nav360">
+      <a href="index.html">Ingreso</a>
+      <a href="pileta.html">Pileta</a>
+      <a href="biblioteca.html">Biblioteca</a>
+      <a href="patio.html">Patio</a>
+    </nav>
+  
+  </div>
+
+<script src="js/scripts.js"></script>
+</body>
+</html>

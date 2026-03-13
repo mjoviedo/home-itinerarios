@@ -3,20 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio de Proyectos</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Itinerarios en el tiempo</title>
+    <link rel="stylesheet" href="styles-home.css">
+    <link rel="stylesheet" href="styles-nav.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
 </head>
 <body>
+    <nav id="navbar">
+        <div>
+            <h1><a id="isep" href="https://isep-cba.edu.ar/web/">ISEP</a></h1>
+        </div>
+        <div id="nav-list" class="nav-list">
+
+        </div>
+    </nav>
+
     <header>
-        <h1>Itinerarios en el tiempo</h1>
+        <div>
+            <div class="flex-row">
+                <img src="img/logo-itinerarios-blanco.png" alt=""><img src="img/logo-bajada-blanco.png" alt="">
+            </div>
+            <div class="angosto">
+                    <p>En la intrincada trama de la historia, busquemos juntos las huellas del antiguo oficio de enseñar.</p>
+                    <p>Un proyecto transmedia para reconstruir los escenarios, acontecimientos y debates que dieron vida al sistema formador docente de Córdoba.</p>
+                </div>
+            <div>
+                <a class="boton" href="comenzar-itinerario.html">▶ Iniciar itinerario</a>
+                <p class="atenuado">
+                    Experiencia web interactiva.
+                    <br> Duración aproximada: 20 min
+                </p>
+            </div>
+        </div>
+        
+        
         <img id="nubes" src="img/nubees.png" alt="">
+        
     </header>
-    <main id="project-list" class="project-list">
-        <!-- Los proyectos se inyectarán aquí a través de JavaScript -->
+    <!-- 
+    <section id="acercade">
+        <div>
+            <h1>
+                <a href="" class="typewrite" data-period="2000" data-type='[ "En la intrincada trama de la historia, busquemos juntos las huellas del antiguo oficio de enseñar.", "Un proyecto transmedia para  reconstruir los escenarios, acontecimientos y debates que constituyeron el sistema formador docente de Córdoba." ]'>
+                    <span class="wrap"></span>
+                </a>
+            </h1>
+        </div>
+        <div>
+                <a class="boton2" href="mapa.html">Saber más</a>
+        </div>
+    </section>
+    -->
+    <main>
+        <div id="materiales" class="main-text">
+            <h1>Materiales</h1>
+            <p>Últimos materiales subidos</p>
+        </div>
+        <div id="project-list" class="project-list">
+            <!-- Los proyectos se inyectarán aquí a través de JavaScript -->
+        </div>
     </main>
     <footer id="footer">
-        <p>Itinerarios en el tiempo</p>
-        <p>ISEP</p>
+        <div id="logo-list" class="logo-list">
+
+        </div>
     </footer>
 
     <!-- Modal -->
@@ -31,6 +84,8 @@
         </div>
     </div>
 
-    <script src="scripts.js"></script>
+    <script src="proyectos.js"></script>
+    <script src="logos.js"></script>
+    <script src="nav.js"></script>
 </body>
 </html>
