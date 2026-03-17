@@ -93,8 +93,45 @@ section {
     border-color: var(--color5);
 }
 
+#comenzar {
+    background-color: black; 
+    max-width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+
+    }
+
+.texto-negro {
+    line-height: 4em;
+    font-family: "Bitter", serif;
+    max-width: 90vw;
+}
+
+#seccion-islas {
+    background-image: linear-gradient(#020101, #461d29a4, #2713081a, #2713081a, #2713081a, #2713081a, #2713081a), url(img/fondo-escenarios.jpg); 
+    background-size: cover; 
+    max-width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+.islas {
+    max-width: 100%;
+}
+
+.islas img {
+    max-width: 90vw;
+}
+
 #presentacion-index {
-    background: url(img/bg-presentacion.jpg) no-repeat center; 
+    background: url(img/fondo-escenarios.jpg) no-repeat center; 
     background-size: cover; 
     max-width: 100vw;
     display: flex;
@@ -118,7 +155,11 @@ section {
         max-width: 100vw;
         text-align: center;
         line-height: 1em;
+        /*
         translate: 0% -50%;
+        */
+        font-family: "Bitter", serif;
+        font-weight: 500;
     }
 
     #presentacion-texto p {
@@ -910,7 +951,7 @@ img.zoomed {
 
 
 .leaflet-popup-content-wrapper {
-    font-family: bitter;
+    font-family: "Bitter", serif;
     background-color: var(--color2);
     font-size: medium;
 }
@@ -961,5 +1002,5 @@ img.zoomed {
     }
 
 .texto-intro {
-    font-family: "bitter";
+    font-family: "Bitter", serif;;
 }
