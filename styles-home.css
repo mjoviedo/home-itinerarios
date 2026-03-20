@@ -188,7 +188,7 @@ header div:last-child {
 .project-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
     padding: 20px;
     max-width: 1100px;
 }
@@ -261,7 +261,8 @@ header div:last-child {
     height: 100%; 
     overflow: auto; 
     background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.4); 
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 15px;
 }
 
 .modal-content {
@@ -276,6 +277,7 @@ header div:last-child {
 
 #modal-image {
     width: 100%;
+    margin-top: 10px;
 }
 
 .close-button {
