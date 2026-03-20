@@ -30,13 +30,21 @@ body {
     background-color: var(--negro);
     overflow-x: hidden;
     font-family: "Open Sans", sans-serif;
+}
 
+.bitter {
+   font-family: "Bitter", serif; 
 }
 
 main {
     color: #fff;
     height: fit-content;
+    /*
     background-image: linear-gradient( #020101, #020101c7, #461d29a4, #27130856, #2713081a), url(img/bg-proyectos.jpg); 
+    */
+    background-image: linear-gradient( #020101, #020101c7, #461d29a4, #27130856, #2713081a), url(img/bg-proyectos.jpg);
+    background-attachment: fixed;
+    background-position: center;
     background-position: bottom;
     background-size: cover;
     display: flex;
@@ -56,9 +64,12 @@ header {
     height: 100vh;
     min-height: fit-content;
     max-width: 100vw;
-    background-image: linear-gradient(#2713081a, #2713081a, #461d29a4, #020101c7, #020101), url(img/bg-sierras2.jpg); 
-    background-position: bottom;
-    background-size: cover;
+    background-image: url(img/bg-sierras2.jpg); 
+    /*  
+    background-image: linear-gradient(#2713081a, #2713081a, #461d29a4, #020101c7, #020101), url(img/bg-sierras2.jpg);
+    */
+    background-attachment: fixed;
+    background-position: center;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
