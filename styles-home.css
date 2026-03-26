@@ -7,6 +7,11 @@ body {
     padding: 0;
 }
 
+* {
+    transition: 0.3s ease-in-out;
+}
+
+@view-transition { navigation: auto; }
 
 :root {
     font-family: "Open Sans", sans-serif;
@@ -220,8 +225,8 @@ header div:last-child {
 
 .project-card:hover {
     background-color: var(--gris);
-    transition: 0.3s;
-    border: 2px solid var(--color6);
+    border: 2px solid var(--color7);
+    transition: 0.3s ease-in-out;
 }
 
 .project-card img {
@@ -241,26 +246,13 @@ header div:last-child {
 .project-card .category {
     width: fit-content;
     font-size: 0.8em;
-    border: 1px solid var(--color7);
-    border-radius: 5px;
-    padding: 5px;
+    font-weight: 600;
+/*    border: 1px solid var(--color7); 
+    border-radius: 5px; */
     color: var(--color7);
 }
 
-.project-card a {
-    display: block;
-    text-align: center;
-    margin-top: 10px;
-    padding: 10px;
-    background: #007BFF;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-}
 
-.project-card a:hover {
-    background: #0056b3;
-}
 
 .modal {
     display: none; 
@@ -272,15 +264,18 @@ header div:last-child {
     height: 100%; 
     overflow: auto; 
     background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.4);
-    border-radius: 15px;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 9;
+    overflow-y: hidden;
 }
 
 .modal-content {
     background-color: var(--gris);
-    margin: 15% auto; 
+    margin: auto;
+    transform: translateY(30%); 
     padding: 20px;
     border: 1px solid var(--negro);
+    border-radius: 5px;
     color: white;
     width: 80%; 
     max-width: 500px;
@@ -308,8 +303,8 @@ header div:last-child {
 .descripcion-corta {
   overflow: hidden;
   display: -webkit-box; /* Required for line clamping */
-  -webkit-line-clamp: 1; /* Number of lines to show */
-  line-clamp: 1; /* Standard property, but vendor prefix is needed for now */
+  -webkit-line-clamp: 2; /* Number of lines to show */
+  line-clamp: 2; /* Standard property, but vendor prefix is needed for now */
   -webkit-box-orient: vertical;
   text-overflow: ellipsis; /* Optional: adds the ellipsis */
 }

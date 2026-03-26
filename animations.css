@@ -100,3 +100,30 @@
       animation-name: fadeIn4;
       animation-duration: 4s;
     }
+
+
+    .zone-top-left {
+            animation: driftTopLeft 2.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+        }
+        .zone-top-right {
+            animation: driftTopRight 2.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+        }
+        .zone-bottom {
+            animation: driftBottom 2.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+        }
+
+        /* Adjust the 'from' translate values to push them tighter together */
+        @keyframes driftTopLeft {
+            from { transform: translate(30px, 20px); opacity: 0; }
+            to { transform: translate(0, 0); opacity: 1; }
+        }
+
+        @keyframes driftTopRight {
+            from { transform: translate(-30px, 20px); opacity: 0; }
+            to { transform: translate(0, 0); opacity: 1; }
+        }
+
+        @keyframes driftBottom {
+            from { transform: translate(0, -35px); opacity: 0; }
+            to { transform: translate(0, 0); opacity: 1; }
+        }
