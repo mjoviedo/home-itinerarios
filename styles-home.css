@@ -170,7 +170,6 @@ header div:last-child {
 }
 
 .atenuado {
-    padding-left: 2em;
     opacity: 0.6;
     font-size: 0.8em;
 }
@@ -376,4 +375,9 @@ footer {
     max-width: 95%;
     margin: 2em;
     text-align: left;
+}
+
+#logo-home {
+    width: 390px;
+    max-width: 95%;
 }
