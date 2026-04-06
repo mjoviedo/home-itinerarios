@@ -1,0 +1,305 @@
+html {
+  padding: none;
+}
+
+* {
+    transition: 0.8s;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+a, p, h1, h2, h3 {
+  color: var(--color4);
+}
+
+h1, h2, h3, h4 {
+  font-family: "Bitter", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin: 0;
+}
+
+.bitter{
+  font-family: "Bitter", serif;
+}
+
+section {
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/img/bg-regiones.jpg);
+    overflow: hidden;
+}
+
+.bordo {
+    color: white;
+    background-color: var(--color6);
+}
+
+.marron {
+    color: var(--color4);
+}
+
+.blanco {
+    color: var(--color5);
+    border-color: var(--color5);
+}
+
+
+/*---- TEST REGIONES 2 ---*/
+
+#isla-grande {
+    width: 90%;
+    max-width: 1000px;
+    position: relative;
+    margin: 50px auto;
+    margin-top: 100px;
+    z-index: 0;
+}
+
+#isla {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#ruta {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.btn-region {
+    position: absolute;
+    width: 5%;
+    max-width: 6%; /* Tamaño relativo al mapa */
+    transform: translate(-50%, -50%); /* Centra el punto en la coordenada */
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    z-index: 10;
+    position: relative;
+}
+
+.btn-region img:hover {
+    transform: scale(1.1);
+}
+
+/* COORDENADAS (Ajustar según tu diseño) */
+    #openModal1 { top: 25%; left: 27%; }
+    #openModal2 { top: 27%; right: 29%; }
+    #openModal3 { top: 59%; left: 48%; }
+
+
+.btn-region img {
+    width: 100px;
+    min-width: 64px;
+    max-width: 6vw;
+    z-index: 4;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#openModal1 img {
+    width: 140px;
+    min-width: 104px;
+    z-index: 4;
+}
+
+
+
+#openModal1 {
+    position: absolute;
+    z-index: 4;
+}
+
+#openModal2 {
+    position: absolute;
+    z-index: 4;
+}
+
+#openModal3 {
+    position: absolute;
+    z-index: 4;
+}
+
+
+#openModal1::after {
+  content: "Institucionalización";
+  color: white;
+  background-color: var(--color4);
+  opacity: 0.8;
+  font-family: bitter;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+    z-index: 9;
+    position: absolute;
+    bottom: -130px;
+    left: -20px;
+}
+
+#openModal2::after {
+  content: "En construcción";
+  color: white;
+  background-color: var(--color4);
+  opacity: 0.8;
+  font-family: bitter;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  white-space: nowrap;
+    z-index: 9;
+    position: absolute;
+    bottom: -130px;
+    left: -20px;
+}
+
+#openModal3::after {
+  content: "En construcción";
+  color: white;
+  background-color: var(--color4);
+  opacity: 0.8;
+  font-family: bitter;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+    white-space: nowrap;
+    z-index: 9;
+    position: absolute;
+    bottom: -130px;
+    left: -20px;
+}
+
+
+
+.inhabilitado {
+    filter: grayscale() opacity(0.5);
+}
+
+
+.boton {
+    border-radius: 2em;
+    text-decoration: none;
+    padding: 0.5em 2em;
+    text-align: center;
+    transition: 0.5s;
+    background-color: var(--color6);
+}
+
+.boton:hover {
+    background-color: var(--color7)!important;
+    transform: scale(1.1);
+    color: white;
+    transition: 0.5s
+}
+
+
+
+
+
+
+
+/* MODALES */
+
+.btn-region {
+    border: none;
+    background-color: transparent;
+}
+
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top of other content */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  display: none; /* Hidden by default */
+  transition: 1s ease-in-out;
+}
+
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black overlay */
+}
+
+#myModal1 {
+    opacity: 1;
+    transition: 1s ease-in-out;
+}
+
+.modal-content {
+  background-color: #F3F3F3dd;
+  padding: 5em 2em;
+  margin: auto;
+  border-radius: 5px;
+  width: 800px; /* Adjust as needed */
+  max-width: 80%; /* Optional: maximum width */
+  position: relative; /* For close button positioning */
+  z-index: 1001; /* Above the overlay */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3em;
+  transition: 0.3s ease-in-out;
+}
+
+.modal-content img {
+    object-fit: contain;
+    align-self: center;
+}
+
+
+.modal-content p {
+    max-width: 300px;
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+}
+
+.modal-content h2 span {
+    color: var(--color3);
+}
+
+.modal-content h2 {
+    max-width: 300px;
+    margin-bottom: 1em;
+}
+
+
+.close-button {
+  color: var(--color3);
+  font-size: xx-large;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  top: 25px;
+  right: 35px;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: black;
+  text-decoration: none;
+}

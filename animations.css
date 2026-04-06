@@ -127,3 +127,16 @@
             from { transform: translate(0, -35px); opacity: 0; }
             to { transform: translate(0, 0); opacity: 1; }
         }
+
+
+
+        @keyframes opacidadAnimada { /* flame pulses */
+          0%   { opacity:1; }
+          50%  { opacity:0; }
+          100% { opacity:1; }
+        }
+        
+        .anima-opacidad {
+            opacity:1;  
+            animation: opacidadAnimada 4s infinite ease-in-out;
+        }

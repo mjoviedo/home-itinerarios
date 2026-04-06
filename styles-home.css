@@ -213,7 +213,7 @@ header div:last-child {
     background-color: var(--negro);
     border: 2px solid var(--negro);
     color: white;
-    border-radius: 5px;
+    border-radius: 10px;
     margin: 10px;
     padding: 15px;
     width: 300px;
@@ -229,9 +229,17 @@ header div:last-child {
     transition: 0.3s ease-in-out;
 }
 
+.project-card:hover img {
+    transition: 0.3s ease-in-out;
+    filter: grayscale(0);
+    opacity: 1;
+}
+
 .project-card img {
     max-width: 100%;
     border-radius: 5px;
+    filter: grayscale(1) sepia(0.3);
+    opacity: 0.5;
 }
 
 .project-card h2 {
@@ -381,3 +389,5 @@ footer {
     width: 390px;
     max-width: 95%;
 }
+
+
