@@ -37,8 +37,12 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(img/bg-regiones.jpg) no-repeat center;
     overflow: hidden;
+}
+
+.bg-cartografia {
+    background: url(img/bg-regiones.jpg) no-repeat center;
+    background-size: cover;
 }
 
 .bordo {

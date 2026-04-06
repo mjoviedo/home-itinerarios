@@ -7,7 +7,7 @@ const navs = [
     {
         title: "ISEP",
         content: "Materiales",
-        link: "index.html#materiales"
+        link: "materiales.html"
     },
     {
         title: "Ministerio de Educación",
