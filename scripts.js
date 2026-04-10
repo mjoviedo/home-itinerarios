@@ -91,3 +91,27 @@ audioscroll.forEach(audioscroll => {
 });
 
 */
+
+
+const track = document.getElementById('track');
+const nextBtn = document.getElementById('nextBtn');
+const prevBtn = document.getElementById('prevBtn');
+
+nextBtn.addEventListener('click', () => {
+  // Move forward by the width of one image
+  track.scrollLeft += track.offsetWidth;
+});
+
+prevBtn.addEventListener('click', () => {
+  // Move backward by the width of one image
+  track.scrollLeft -= track.offsetWidth;
+});
+
+// Optional: Loop back to start/end
+track.addEventListener('scroll', () => {
+  const maxScrollLeft = track.scrollWidth - track.clientWidth;
+  
+  // Basic logic to handle button visibility if you want to hide them at ends
+  prevBtn.style.display = track.scrollLeft <= 0 ? 'none' : 'block';
+  nextBtn.style.display = track.scrollLeft >= maxScrollLeft ? 'none' : 'block';
+});
