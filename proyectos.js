@@ -73,21 +73,47 @@ const projects = [
 ];
 
 function displayProjects() {
-    const projectList = document.getElementById('project-list');
-    projectList.innerHTML = ''; // Limpiar el contenido previo
+    // Helper function to turn a category name into a clean HTML ID
+    // Example: "Album fotográfico" -> "album-fotografico"
+    const formatCategoryId = (category) => {
+        return category.toLowerCase()
+                       .normalize("NFD").replace(/[\u0300-\u036f]/g, "") // Removes accents
+                       .replace(/\s+/g, '-'); // Replaces spaces with hyphens
+    };
+
+    // Find all unique categories in your projects array
+    const uniqueCategories = [...new Set(projects.map(p => p.category))];
+    
+    // Clear out the previous content of all relevant containers first
+    uniqueCategories.forEach(category => {
+        const containerId = `project-list-${formatCategoryId(category)}`;
+        const container = document.getElementById(containerId);
+        if (container) {
+            container.innerHTML = ''; 
+        }
+    });
+
+    // Loop through each project and place it in the correct category div
     projects.forEach((project, index) => {
-        const projectCard = document.createElement('div');
-        projectCard.className = 'project-card';
-        projectCard.innerHTML = `
-        <div onclick="openModal(${index})">
-            <img src="${project.image}" alt="${project.title}">
-            <p class="category">${project.category}</p>
-            <h2>${project.title}</h2>
-            <p class="descripcion-corta">${project.description}</p>
-            <!--<button onclick="openModal(${index})">Ver Proyecto</button>-->
-        </div>
-        `;
-        projectList.appendChild(projectCard);
+        const containerId = `project-list-${formatCategoryId(project.category)}`;
+        const container = document.getElementById(containerId);
+
+        // Only try to append if you created a div for this category in your HTML
+        if (container) {
+            const projectCard = document.createElement('div');
+            projectCard.className = 'project-card';
+            projectCard.innerHTML = `
+            <div onclick="openModal(${index})">
+                <img src="${project.image}" alt="${project.title}">
+                <p class="category">${project.category}</p>
+                <h2>${project.title}</h2>
+                <p class="descripcion-corta">${project.description}</p>
+            </div>
+            `;
+            container.appendChild(projectCard);
+        } else {
+            console.warn(`Warning: Missing HTML div with id="${containerId}" for the "${project.category}" category.`);
+        }
     });
 }
 
