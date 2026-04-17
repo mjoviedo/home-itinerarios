@@ -1152,3 +1152,8 @@ img.zoomed {
 .nav-btn:hover {
   opacity: 1;
 }
+
+
+.leaflet-popup-content img {
+    width: 100%;
+}
