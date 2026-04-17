@@ -105,7 +105,7 @@ function displayProjects() {
             projectCard.innerHTML = `
             <div onclick="openModal(${index})">
                 <img src="${project.image}" alt="${project.title}">
-                <p class="category">${project.category}</p>
+                
                 <h2>${project.title}</h2>
                 <p class="descripcion-corta">${project.description}</p>
             </div>
