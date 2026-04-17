@@ -416,6 +416,12 @@ section {
     background-color: #67475288 !important;
 }
 
+.leaflet-popup-content img {
+    width: 100%;
+    filter: grayscale(0.9) sepia(0.2);
+    margin-bottom: 0.5em;
+}
+
 .sombra {
     filter: drop-shadow(-5px 5px 6px black);
 }
@@ -839,9 +845,11 @@ video {
     cursor: zoom-in;
 }
 
+/*
 img {
       transition: transform 0.25s ease;
 }
+*/
 
 img.zoomed {
   cursor: zoom-out;
@@ -1154,6 +1162,3 @@ img.zoomed {
 }
 
 
-.leaflet-popup-content img {
-    width: 100%;
-}
