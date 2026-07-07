@@ -815,6 +815,16 @@ video {
     height: 30vh;
 }
 
+.container-creditos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        justify-items: center;
+        gap: 2em;
+        max-width: 90%;
+    }
 
 .container-final {
         display: flex;
@@ -920,7 +930,6 @@ img.zoomed {
     }
 
 #logo-creditos {
-
     width: 200px;
     max-width: 80vw;
     margin-bottom: 5em;
