@@ -86,6 +86,10 @@
       animation-duration: 4s;
     }
 
+    .ad5 {
+      animation-duration: 5s;
+    }
+
     .fadein2 {
       animation-name: fadeIn2;
       animation-duration: 4s;
