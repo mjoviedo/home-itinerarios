@@ -26,7 +26,7 @@ function closeModal(modalElement) {
 }
 
 // Event listeners for opening modals
-openModalButtons.modal1.addEventListener('click', () => openModal('myModal1'));
+// openModalButtons.modal1.addEventListener('click', () => openModal('myModal1'));
 openModalButtons.modal2.addEventListener('click', () => openModal('myModal2'));
 openModalButtons.modal3.addEventListener('click', () => openModal('myModal3'));
 

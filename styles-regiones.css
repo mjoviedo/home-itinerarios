@@ -144,7 +144,7 @@ section {
 
 
 #openModal1::after {
-  content: "Institucionalización";
+  content: "Institucionalización y expansión";
   color: white;
   background-color: var(--color4);
   opacity: 0.8;
@@ -158,34 +158,35 @@ section {
 }
 
 #openModal2::after {
-  content: "En construcción";
+  content: "Reconfiguración del sistema formador";
   color: white;
   background-color: var(--color4);
   opacity: 0.8;
   font-family: bitter;
   padding: 0.5em 1em;
   border-radius: 5px;
-  white-space: nowrap;
+    width:180px;
     z-index: 9;
     position: absolute;
     bottom: -130px;
-    left: -20px;
+    left: -60px;
 }
 
 #openModal3::after {
-  content: "En construcción";
+  content: "Jerarquización y revalorización de la formación docente";
   color: white;
   background-color: var(--color4);
   opacity: 0.8;
   font-family: bitter;
   padding: 0.5em 1em;
   border-radius: 5px;
-    white-space: nowrap;
+  width:180px;
     z-index: 9;
     position: absolute;
-    bottom: -130px;
-    left: -20px;
+    bottom: -150px;
+    left: -60px;
 }
+
 
 
 
@@ -278,8 +279,6 @@ section {
 
 .modal-content p {
     max-width: 300px;
-    margin-top: 0.5em;
-    margin-bottom: 2em;
 }
 
 .modal-content h2 span {
@@ -288,9 +287,14 @@ section {
 
 .modal-content h2 {
     max-width: 300px;
-    margin-bottom: 1em;
 }
 
+.contenido-modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+}
 
 .close-button {
   color: var(--color3);
@@ -306,4 +310,9 @@ section {
 .close-button:focus {
   color: black;
   text-decoration: none;
+}
+
+.fede-size {
+    font-size: 1.1em;
+    font-weight: 600;
 }
