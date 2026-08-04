@@ -551,8 +551,9 @@ video {
 }
 
 .textos-cuadernillo p {
-    color: var(--color3);
+    color: var(--color4);
     margin-bottom: 0.8em;
+    font-weight: 500;
 }
 
     #media-cuadernillo img {
@@ -768,10 +769,11 @@ video {
     }
 
   .fondo-frase-cierre p {
-    line-height: 1em; 
+    line-height: 1.3em; 
     max-width: 600px; 
     text-align: left;
     font-family: "Bitter", serif;
+    letter-spacing:0.07ch
   } 
 
 .fondo-frase-cierre div p {
@@ -780,6 +782,7 @@ video {
     line-height: 1.3em !important;
     text-align: left;
     color: white;
+    letter-spacing:0.07ch
     }
     
 
@@ -790,6 +793,7 @@ video {
     font-size: large;
     line-height: 1.3em !important;
     color: white;
+    letter-spacing:0.07ch
     }
 
 #cierre {
@@ -1094,6 +1098,7 @@ img.zoomed {
   z-index: 2;
   border-radius: 25px;
   position: relative;
+  background-color: rgb(217, 207, 180) !important;
 }
 
 #contenedor-mapa {
@@ -1104,7 +1109,7 @@ img.zoomed {
     flex-wrap: wrap;
     justify-content: center; 
     align-items: center;
-    gap: 2em;
+    gap: 4em;
     background-color: antiquewhite;
     z-index: 1;
     position: relative !important;
