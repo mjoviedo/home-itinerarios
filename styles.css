@@ -463,7 +463,7 @@ section {
 }
 
 .sombra {
-    filter: drop-shadow(-5px 5px 6px black);
+    filter: drop-shadow(-5px 5px 6px rgba(0, 0, 0, 0.368));
 }
 
 .columna-podcast {
@@ -1100,6 +1100,8 @@ img.zoomed {
   position: relative;
   background-color: rgb(217, 207, 180) !important;
 }
+
+
 
 #contenedor-mapa {
     background: url(img/bg-sierras.jpg);

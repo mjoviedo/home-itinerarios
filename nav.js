@@ -1,18 +1,18 @@
 const navs = [
     {
         title: "Itinerarios en el Tiempo",
-        content: "Inicio",
+        content: "Itinerarios en el Tiempo",
         link: "index.html"
     },
     {
-        title: "ISEP",
-        content: "Materiales",
-        link: "materiales.html"
-    },
-    {
-        title: "Ministerio de Educación",
+        title: "Acerca de",
         content: "Acerca de",
         link: "acercade.html"
+    },
+      {
+        title: "Materiales",
+        content: "Materiales",
+        link: "materiales.html"
     },
     
     // Agrega links del nav aquí
