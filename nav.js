@@ -1,7 +1,7 @@
 const navs = [
     {
-        title: "Itinerarios en el Tiempo",
-        content: "Itinerarios en el Tiempo",
+        title: "Inicio",
+        content: "Inicio",
         link: "index.html"
     },
     {
